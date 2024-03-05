@@ -1,0 +1,5 @@
+
+  .site-title{
+    grid-column: span5;
+    grid-column: 4/5;
+  }
