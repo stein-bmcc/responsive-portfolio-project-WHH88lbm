@@ -17,6 +17,7 @@ nav li:hover {
 }
 nav a {
   color: #c00af76c;
+
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 600;
@@ -26,14 +27,8 @@ nav a:focus {
   color: black;
 }
 nav a:hover {
-  color: #2fb607;
+  color: #790ec1c1;
 }
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
-
-
-  
   
   
   
