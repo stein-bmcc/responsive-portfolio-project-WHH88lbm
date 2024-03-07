@@ -1,0 +1,56 @@
+nav {
+  border: 1px solid #f8f6f6;
+  width: 30%;
+  
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  padding: 0.5rem 1rem; 
+}
+nav li:hover {
+  background-color: #d5d5d3;
+}
+nav a {
+  color: #c00af76c;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+nav a:focus {
+  background-color: #F0C808;
+  color: black;
+}
+nav a:hover {
+  color: #2fb607;
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
