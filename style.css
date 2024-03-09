@@ -29,10 +29,53 @@ nav a:focus {
 nav a:hover {
   color: #790ec1c1;
 }
+ 
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik+Bubbles&display=swap");
+
+img{
+  width: auto; 
+  height: auto;
+  max-width: 100%; 
+}
+
+.card{
+  background-color: #DFF0F9;
+  border-radius: 0.1rem;
+  border: 0.5px solid #808080;
+  padding: 10px;
   
+ }
+
+
+.card{
+  display: block;
+  width: 100%;
+  border: 1.5px solid black;
+  padding: 5px;
+}
+
+
+.card__btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-family:'Rubik+Bubbles';
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: 	#32CD32;
+  background-color: #D3D3D3;
+  border: 1px solid #333;
+  border-radius: 0.4rem;
+  box-shadow:3px 3px 3px black;
   
-  
-  
+}
+.grid .section-head{
+
+  grid-column: 1/-1;
+}
+
+
   
   
   
