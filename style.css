@@ -30,7 +30,7 @@ nav a:hover {
   color: #790ec1c1;
 }
  
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik+Bubbles&display=swap");
+
 
 img{
   width: auto; 
@@ -47,7 +47,7 @@ img{
  }
 
 
-.card{
+.card__img{
   display: block;
   width: 100%;
   border: 1.5px solid black;
@@ -59,7 +59,7 @@ img{
   display: block;
   width: 100%;
   padding: 1rem;
-  font-family:'Rubik+Bubbles';
+  
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -70,15 +70,15 @@ img{
   box-shadow:3px 3px 3px black;
   
 }
-.grid .section-head{
 
-  grid-column: 1/-1;
+projects{
+  display: grid;
+   grid-template-columns: repeat(3,1fr);
+  grid-gap:20px;
 }
 
 
-  
-  
-  
+
   
   
   
