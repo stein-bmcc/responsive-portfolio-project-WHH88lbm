@@ -71,11 +71,35 @@ img{
   
 }
 
-project-page{
-  display: grid;
-   grid-template-columns: repeat(3,1fr);
-  grid-gap:20px;
+.project-page{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
 }
+  
+  /*.section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}*/
+@media (min-width: 400px) {
+  .project-page {
+    grid-template-columns:1fr;
+  }
+  h2{
+    color:#F0C808;
+  }
+}
+
+
+  
+
+
+  
+   
+
+
+
 
 
 
