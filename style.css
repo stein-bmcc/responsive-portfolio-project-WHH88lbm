@@ -77,11 +77,18 @@ img{
   justify-content:space-between;
 }
   
-  /*.section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-}*/
+  section {
+    text-align: center;
+}
+.Mysite{
+  display: grid;
+  grid-template-columns:1fr 2fr;
+  grid-gap: 10px;
+
+}
+h2{
+  text-align: center;
+}
 @media (min-width: 400px) {
   .project-page {
     grid-template-columns:1fr;
