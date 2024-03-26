@@ -1,6 +1,6 @@
 nav {
   border: 1px solid #f8f6f6;
-  width: 30%;
+  width: 50%;
   
 }
 
@@ -16,7 +16,7 @@ nav li:hover {
   background-color: #d5d5d3;
 }
 nav a {
-  color: #c00af76c;
+  color: #1884cdc8;
 
   text-decoration: none;
   font-size: 1.5rem;
@@ -29,7 +29,15 @@ nav a:focus {
 nav a:hover {
   color: #790ec1c1;
 }
- 
+
+body{
+    margin:5em;
+    line-height: 1.5;
+  }
+  p{
+     font-family:monospace;
+     font-size: 20px;
+  }
 
 
 img{
@@ -43,6 +51,7 @@ img{
   border-radius: 0.1rem;
   border: 0.5px solid #808080;
   padding: 10px;
+  max-width: fit-content;
   
  }
 
@@ -59,6 +68,7 @@ img{
   display: block;
   width: 100%;
   padding: 1rem;
+ 
   
   font-size: 2rem;
   text-align: center;
@@ -77,9 +87,15 @@ img{
   justify-content:space-between;
 }
   
-  section {
+  section{
     text-align: center;
-}
+    }
+  .grid{
+        display: column;
+        grid-template-columns: repeat(2, 1fr);
+   }
+  
+  
 .Mysite{
   display: grid;
   grid-template-columns:1fr 2fr;
@@ -88,6 +104,9 @@ img{
 }
 h2{
   text-align: center;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
 }
 @media (min-width: 400px) {
   .project-page {
