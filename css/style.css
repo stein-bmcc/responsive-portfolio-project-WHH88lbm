@@ -1,0 +1,324 @@
+/* This is basic way to make images responsive. This means if they're larger than their container they will shrink to fit it. Not a complete solution to responsive images. */
+
+img, video {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+/*RESPONSIVE VIDEO
+See for more info: https://codepen.io/profstein/pen/mrMLRj
+*/
+.videoWrapper{
+  position: relative;
+  height: 0;
+  /* padding-bottom: 75%; */ /* 4:3 aspect ratio */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.videoWrapper iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+}
+/*nav {
+  border: 1px solid #f8f6f6;
+  width: 50%;
+  
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  padding: 0.5rem 1rem; 
+}
+nav li:hover {
+  background-color: #d5d5d3;
+}
+nav a {
+  color: #1884cdc8;
+
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+nav a:focus {
+  background-color: #F0C808;
+  color: black;
+}
+nav a:hover {
+  color: #790ec1c1;
+}*/
+
+/* =========================
+  NAVIGATION STYLING
+  =========================  */
+  .site-title {
+    /* you may change this styling to fit your site*/
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #1884cdc8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .site-nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem; /* adds space between logo and nav items if the items wrap under the logo */
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    background-color: #eaeaea;
+    transition: top 500ms ease-in-out;
+  }
+  
+  .site-nav a {
+    color: #1884cdc8;
+    text-decoration: none;
+    font-size:0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .site-nav.scroll-up,r
+  .site-nav:focus-within {
+    top: 0;
+  }
+  
+  .site-nav.scroll-down {
+    top: -100%;
+  }
+  
+nav ul{
+  /*   display: none; */
+    max-height: 0;
+    flex-basis: 100%;
+    text-align: right;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+  /*   these are needed for when showing nav from hamburger state */align-content
+    -webkit-transition: max-height .5s; 
+    -moz-transition: max-height .5s; 
+    -ms-transition: max-height .5s; 
+    -o-transition: max-height .5s; 
+    transition: max-height .5s;  
+    overflow: hidden;
+  
+  }
+  /* show the nav when active class is applied */
+  nav ul .active{
+    display: block;
+    max-height: 100vh;
+    
+  }
+  nav a{
+    display: block;
+    line-height: 1rem;
+    margin: 1.5rem 0;
+    
+  }
+  nav a:hover{
+    /*border-bottom: 2px solid #0f0f0f;*/
+    color: #790ec1c1;
+  }
+  
+  
+  
+  
+  /* BREAKPOINT =============================================
+  This is the breakpoint where the nav changes from hamburger icon to full menu. Change 600px to adjust the breakpoint. */
+  @media screen and (min-width:600px){
+    .hamburger{
+      display: none;
+    }
+    nav ul {
+      display: flex;
+      flex-basis: auto;
+      height: auto;
+      max-height: 100vh;
+      margin: 0 -1em;
+    }
+  
+    nav a {
+      display: inline-block;
+      margin: 0 1em;
+    }
+  }
+  
+  
+  /* CSS Hamburger Icon ======================================
+  thanks to Elijah Manor */
+  .hamburger{
+    padding-right: 1rem;
+    position: relative;
+  }
+  .hamburger span, 
+  .hamburger span:before,
+  .hamburger span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #000; /*color of hamburger icon */
+    position: absolute;
+    display: block;
+    content: '';
+  }
+  .hamburger span{
+    top:5px;
+  }
+  .hamburger span:before {
+    top: -10px;
+  }
+  .hamburger span:after {
+    bottom: -10px;
+  }
+  
+
+body{
+    margin:5em;
+    line-height: 1.5;
+  }
+  p{
+     font-family:monospace;
+     font-size: 20px;
+  }
+
+
+img{
+  width: auto; 
+  height: auto;
+  max-width: 100%; 
+}
+
+.card{
+  background-color: #DFF0F9;
+  border-radius: 0.1rem;
+  border: 0.5px solid #808080;
+  padding: 10px;
+  max-width: fit-content;
+  
+ }
+ .grid{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap: 10px;
+ }
+
+
+.card__img{
+  display: block;
+  width: 100%;
+  border: 1.5px solid black;
+  padding: 5px;
+}
+
+
+.card__btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+ 
+  
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: 	#32CD32;
+  background-color: #D3D3D3;
+  border: 1px solid #333;
+  border-radius: 0.4rem;
+  box-shadow:3px 3px 3px black;
+  
+}
+
+.HTML{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:20px;
+}
+.JavaScript{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:20px;
+}
+
+  
+  section {
+    text-align: center;
+    }
+  /*.grid{
+        display: column;
+        grid-template-columns: repeat(2, 1fr);
+   }*/
+  
+  
+/*.Mysite{
+  display: grid;
+  grid-template-columns:1fr 2fr;
+  grid-gap: 10px;
+
+}*/
+h2{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #1884cdc8;
+  height:auto;
+  color: white;
+   
+}
+@media (min-width: 400px) {
+  .project-page {
+    grid-template-columns:1fr;
+  }
+  h2{
+    color:#F0C808;
+  }
+}
+
+
+  
+
+
+  
+   
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
