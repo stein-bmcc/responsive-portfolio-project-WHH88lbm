@@ -205,12 +205,13 @@ img{
 }
 
 .card{
-  background-color: #DFF0F9;
-  border-radius: 0.1rem;
-  border: 0.5px solid #808080;
+ /*background-color: #DFF0F9;
+ border-radius: 0.1rem;
+ border: 0.5px solid #808080;*/
   padding: 10px;
   max-width: fit-content;
-  
+  box-shadow: 3px 3px 10px #ccc;
+  margin: 1em;
  }
  .grid{
   display: grid;
@@ -222,12 +223,17 @@ img{
 .card__img{
   display: block;
   width: 100%;
-  border: 1.5px solid black;
-  padding: 5px;
+  /*border: 1.5px solid black;*/
+  /* padding: 5px;*/
+
+  
+
+  
 }
 
 
-.card__btn {
+
+/*.card__btn {
   display: block;
   width: 100%;
   padding: 1rem;
@@ -242,7 +248,7 @@ img{
   border-radius: 0.4rem;
   box-shadow:3px 3px 3px black;
   
-}
+}*/
 
 .HTML{
   display: grid;
