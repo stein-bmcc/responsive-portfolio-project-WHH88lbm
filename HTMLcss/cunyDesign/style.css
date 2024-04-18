@@ -35,7 +35,8 @@ h1,h2, h3, strong{
 }
 
 a{
-    color:burlywood;
+    color: rgba(4, 155, 42, 0.89);
+    /*color:burlywood;*/
 }
 
 h2{
@@ -63,7 +64,9 @@ h2{
 
 .dropdown a{
 
-    background-color: rgb(203, 240, 240);
+    /*background-color: rgb(203, 240, 240);*/
+    background-color: rgb(248, 248, 227);
+    
 }    
 
 
@@ -98,7 +101,8 @@ h2{
     background-color: rgba(248, 248, 241, 0.884);
     font-size: 1.5em;
     padding: 1em;
-    color: rgba(4, 155, 42, 0.89);
+    color:rgb(90, 6, 150);
+    /*color: rgba(4, 155, 42, 0.89);*/
     font-weight: 300;
   
     
