@@ -195,6 +195,8 @@ body{
   p{
      font-family:monospace;
      font-size: 20px;
+     padding-top: 10px;
+     
   }
 
 
@@ -281,6 +283,7 @@ h1{
   text-align: center;
   font-size: 30px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 30px;
  
 }
 footer{
