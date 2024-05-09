@@ -283,8 +283,7 @@ img{
   grid-template-columns: repeat(1,1fr);
   grid-gap:20px;
 }
-
-@media (min-width: 400px) {
+@media (min-width: 768px) {
  .HTML, .JavaScript {
     grid-template-columns:repeat(2,1fr);
   }
@@ -301,8 +300,7 @@ img{
       grid-template-columns:1fr;
       
      }
-    
-  
+
    }
   
     
