@@ -857,7 +857,7 @@ soundfile = function () {
    *  to play in time for setup() and draw(). If called outside of
    *  preload, the p5.SoundFile will not be ready immediately, so
    *  loadSound accepts a callback as the second parameter. Using a
-   *  <a href="https://github.com/processing/p5.js/wiki/Local-server">
+   *  <a href="https://github.com/processing/p5.javascript/wiki/Local-server">
    *  local server</a> is recommended when loading external files.
    *  
    *  @method loadSound
@@ -4246,7 +4246,7 @@ var signal;
 signal = function () {
   'use strict';
   // Signal is built with the Tone.js signal by Yotam Mann
-  // https://github.com/TONEnoTONE/Tone.js/
+  // https://github.com/TONEnoTONE/Tone.javascript/
   var Signal = Tone_signal_Signal;
   var Add = Tone_signal_Add;
   var Mult = Tone_signal_Multiply;
@@ -7985,7 +7985,7 @@ metro = function () {
   'use strict';
   var p5sound = master;
   // requires the Tone.js library's Clock (MIT license, Yotam Mann)
-  // https://github.com/TONEnoTONE/Tone.js/
+  // https://github.com/TONEnoTONE/Tone.javascript/
   var Clock = Tone_core_Clock;
   var ac = p5sound.audiocontext;
   // var upTick = false;
